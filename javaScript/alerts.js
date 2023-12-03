@@ -30,6 +30,7 @@ alertButton.addEventListener("click", () => {
     }
 })
 
+
 //Get Alerts
 
 async function getAlerts() {
@@ -40,6 +41,13 @@ async function getAlerts() {
         console.log(alertArray);
         console.log(alertArray.data);
         console.log(alertArray.cities);
+        alertArray.cities.array.forEach(element => {
+            if (element === "בית דגן") {
+                alertBackground()
+                document.querySelector('#areaBox').className = "areaBox"
+                startCountdown()
+            }
+        });
     }
     setTimeout(getAlerts, 1000)
 }
