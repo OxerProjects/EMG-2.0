@@ -111,6 +111,7 @@ p {
 
 .alerts {
     border: 0;
+    min-width: 300px;
 }
 
 .buttonBox {
@@ -128,7 +129,7 @@ p {
 }
 
 #alertsTitle {
-    margin-left: 70px;
+    margin-left: 55px;
     width: 15%;
     display: flex;
     justify-content: right;
@@ -139,6 +140,7 @@ p {
     color: var(--alert-color);
     font-size: 20px;
     cursor: auto;
+    min-width: 240px;
 }
 
 .areaBox-hide {
