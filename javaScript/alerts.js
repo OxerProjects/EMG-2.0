@@ -48,6 +48,7 @@ async function getAlerts() {
             console.log(alertArray);
             console.log(alertArray.data);
             alertArray.data.forEach(element => {
+                console.log(element)
                 if (element === "בית דגן") {
                     if (ditectenRedAlert == 0) {
                         count = 0
